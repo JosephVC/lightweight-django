@@ -33,6 +33,9 @@ settings.configure(
 	INSTALLED_APPS=(
 		'django.contrib.staticfiles',
 	),
+	# the below layout is important
+	# before, all the book listed was the "DIRS" section, without BACKEND defined
+	# the above caused errors
 	TEMPLATES=(
 		{
             'BACKEND': 'django.template.backends.django.DjangoTemplates',
